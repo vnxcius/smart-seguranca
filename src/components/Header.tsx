@@ -14,32 +14,32 @@ const Header = () => {
         facebook="smartseguranca"
         email="contato@smartseguranca.com.br"
       />
-      <nav>
-        <div>
+      <nav className="flex justify-between items-center px-16 py-5 max-w-7xl mx-auto">
+        <div className="flex items-center gap-16">
           <a href="/" className="w-fit flex items-center gap-2">
-            <img src="/images/logo.png" alt="Smart Segurança" className="w-10"/>
+            <img src="/images/logo.png" alt="Smart Segurança" className="w-10" />
             <p className="text-xl">
               Smart Segurança
             </p>
           </a>
+
+          <ul className="flex gap-5 text-neutral-500 font-medium">
+            <li>
+              <a href="/sobre" className="hover:text-blue-500">Sobre</a>
+            </li>
+            <li>
+              <a href="/contato" className="hover:text-blue-500">Planos</a>
+            </li>
+            <li>
+              <a href="/contato" className="hover:text-blue-500">Atendimento</a>
+            </li>
+            <li>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a href="/">Início</a>
-          </li>
-          <li>
-            <a href="/sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="/contato">Planos</a>
-          </li>
-          <li>
-            <a href="/contato">Atendimento</a>
-          </li>
-          <li>
-            <a href="/contato">Contrate</a>
-          </li>
-        </ul>
+        <a href="/contato" className="bg-blue-500 font-medium px-6 py-2 rounded-lg text-black hover:bg-blue-600">
+          Contrate
+        </a>
       </nav>
     </header>
   )
